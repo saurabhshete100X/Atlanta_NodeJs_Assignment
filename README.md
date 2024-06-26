@@ -1,78 +1,94 @@
-<<<<<<< HEAD
-# Atlanta_NodeJs_Assignment
-Atlanta_NodeJs_Assignment
-=======
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Project Title
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Project](#running-the-project)
+- [API Documentation](#api-documentation)
+  - [Auth Endpoints](#auth-endpoints)
+  - [Questions Endpoints](#questions-endpoints)
+  - [Responses Endpoints](#responses-endpoints)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Introduction
+A brief description of the project, its purpose, and what it aims to achieve.
 
-## Description
+## Features
+- Feature 1
+- Feature 2
+- Feature 3
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Getting Started
 
-## Installation
+### Prerequisites
+List of software and tools that need to be installed before setting up the project.
+- Node.js
+- npm / pnpm
 
+### Installation
+Step-by-step guide on how to install and set up the project.
 ```bash
-$ pnpm install
-```
+git clone <repository-url>
+cd <project-directory>
+pnpm install
 
-## Running the app
 
-```bash
-# development
-$ pnpm run start
 
-# watch mode
-$ pnpm run start:dev
+Running the Project
+Instructions on how to run the project.
 
-# production mode
-$ pnpm run start:prod
-```
+bash
+Copy code
+pnpm run start:dev
+API Documentation
+Auth Endpoints
+POST /auth/signup
 
-## Test
+Description: Sign up a new user
+Request Body: { "username": "example", "password": "example" }
+Response: { "message": "User created successfully" }
+POST /auth/login
 
-```bash
-# unit tests
-$ pnpm run test
+Description: Log in a user
+Request Body: { "username": "example", "password": "example" }
+Response: { "access_token": "JWT token" }
+Questions Endpoints
+POST /questions
+Description: Add a new question
+Request Body: { "question": "What is Node?", "difficulty_level": "easy", "skillId": 1 }
+Response: { "skillId": 1, "difficulty_level": "easy", "question": "What is Node?", "_id": "unique_id", "__v": 0 }
+Responses Endpoints
+POST /responses
+Description: Add a response to a question
+Request Body: { "questionId": 1, "candidateId": 1, "response": "Node is a runtime environment for JavaScript." }
+Response: { "questionId": 1, "candidateId": 1, "response": "Node is a runtime environment for JavaScript.", "_id": "unique_id", "__v": 0 }
+Technologies Used
+NestJS
+MongoDB
+Passport.js
+bcrypt
+TypeScript
+Contributing
+Guidelines for contributing to the project.
 
-# e2e tests
-$ pnpm run test:e2e
+Fork the repository
+Create a new branch (git checkout -b feature-branch)
+Make your changes
+Commit your changes (git commit -m 'Add some feature')
+Push to the branch (git push origin feature-branch)
+Open a pull request
+License
+This project is licensed under the MIT License.
 
-# test coverage
-$ pnpm run test:cov
-```
+Contact
+For any queries or issues, please contact:
 
-## Support
+Name: Saurabh Shete
+Email: saurabhshete281@gmail.com
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
->>>>>>> 4f401b3 (feat : Candidate Skill Rating System)
