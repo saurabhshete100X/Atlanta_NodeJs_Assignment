@@ -16,13 +16,6 @@
 - [License](#license)
 - [Contact](#contact)
 
-## Introduction
-A brief description of the project, its purpose, and what it aims to achieve.
-
-## Features
-- Feature 1
-- Feature 2
-- Feature 3
 
 ## Getting Started
 
